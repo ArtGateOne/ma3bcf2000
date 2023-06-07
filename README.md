@@ -15,7 +15,7 @@ Double click ma3bcf2000.js
 
 Open my demo show in ma3 and try.
 
-Start my plugin - to run feedback
+Start plugin - to run feedback
 
 ---
 
@@ -33,5 +33,9 @@ Demo show, osc settings and plugin.
 Run BCF2000 in Mackie mode (2 button)
 
 dont set bcf2000 in ma3 midi settings in & out.
+
+
+------
+plugin autor mr-button
 
 
