@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GMA3 DataVersion="1.9.3.1">
+    <OSCData Guid="E3 1C 05 FC 24 B5 10 02 B2 18 81 8E 41 04 50 25" DestinationIP="127.255.255.255" Mode="UDP" Port="8000" FaderRange="16368" Send="No" SendCommand="No" />
+    <OSCData Guid="E3 1C 05 FC 91 CB 10 02 F2 E9 86 C1 22 14 3E 1B" DestinationIP="127.255.255.255" Mode="UDP" Port="8001" Receive="No" ReceiveCommand="No" />
+</GMA3>

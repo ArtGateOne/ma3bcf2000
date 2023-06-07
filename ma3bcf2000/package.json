@@ -1,0 +1,22 @@
+{
+  "name": "ma3bcf2000",
+  "version": "1.0.0",
+  "description": "none",
+  "main": "ma3bcf2000.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "none"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "ArtGateOne",
+  "license": "ISC",
+  "dependencies": {
+    "easymidi": "^3.0.1",
+    "osc": "^2.4.4"
+  }
+}
