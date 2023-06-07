@@ -13,6 +13,17 @@ To run my code - set node.exe as default tool to open .js file
 
 Double click ma3bcf2000.js
 
+Open my demo show in ma3 and try.
+
+Start my plugin - to run feedback
+
+---
+
+
+Use Faders to control ma3 faders
+
+Use PRESET arrows to select PAGE
+
 
 Some files u find in ma3_files folder
 Demo show, osc settings and plugin.
@@ -22,3 +33,5 @@ Demo show, osc settings and plugin.
 Run BCF2000 in Mackie mode (2 button)
 
 dont set bcf2000 in ma3 midi settings in & out.
+
+
