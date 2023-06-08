@@ -20,7 +20,11 @@ Start plugin - to run feedback
 ---
 
 
-Use Faders to control ma3 faders
+Use Faders to control ma3 faders 201 - 208 on actual page
+
+Use Encoders to control ma3 encoders 301 - 308 on actual page
+
+Upper keys control 301-308 and 201-208 (no feedback yet)
 
 Use PRESET arrows to select PAGE
 
