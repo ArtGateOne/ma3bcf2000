@@ -1,4 +1,4 @@
-//ma3bcf2000v 1.0.4 by ArtGateOne - DEMO - 
+//ma3bcf2000v 1.0.5 by ArtGateOne - DEMO - 
 
 var easymidi = require('easymidi');
 var osc = require("osc")
@@ -95,6 +95,54 @@ udpPort.on("message", function (oscMsg, timeTag, info) {
   else if (oscMsg.address == "/Fader308") {
     F308 = oscMsg.args[0].value;
     light_encoder(55, F308);
+  }
+  else if (oscMsg.address == "/Key301"){
+    output.send('noteon', { note: 16, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key302"){
+    output.send('noteon', { note: 17, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key303"){
+    output.send('noteon', { note: 18, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key304"){
+    output.send('noteon', { note: 19, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key305"){
+    output.send('noteon', { note: 20, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key306"){
+    output.send('noteon', { note: 21, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key307"){
+    output.send('noteon', { note: 22, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key308"){
+    output.send('noteon', { note: 23, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key201"){
+    output.send('noteon', { note: 24, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key202"){
+    output.send('noteon', { note: 25, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key203"){
+    output.send('noteon', { note: 26, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key204"){
+    output.send('noteon', { note: 27, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key205"){
+    output.send('noteon', { note: 28, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key206"){
+    output.send('noteon', { note: 29, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key207"){
+    output.send('noteon', { note: 30, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
+  }
+  else if (oscMsg.address == "/Key208"){
+    output.send('noteon', { note: 31, velocity: (oscMsg.args[0].value * 127 ), channel: 0 });
   }
 });
 
