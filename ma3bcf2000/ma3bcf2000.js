@@ -1,4 +1,4 @@
-//ma3bcf2000v 1.0.3 by ArtGateOne - DEMO - 
+//ma3bcf2000v 1.0.4 by ArtGateOne - DEMO - 
 
 var easymidi = require('easymidi');
 var osc = require("osc")
@@ -56,14 +56,14 @@ var udpPort = new osc.UDPPort({
 // Listen for incoming OSC messages.
 udpPort.on("message", function (oscMsg, timeTag, info) {
 
-  if (oscMsg.address == "/Fader201") { output.send('pitch', { value: oscMsg.args[0].value, channel: 0 }); }
-  else if (oscMsg.address == "/Fader202") { output.send('pitch', { value: oscMsg.args[0].value, channel: 1 }); }
-  else if (oscMsg.address == "/Fader203") { output.send('pitch', { value: oscMsg.args[0].value, channel: 2 }); }
-  else if (oscMsg.address == "/Fader204") { output.send('pitch', { value: oscMsg.args[0].value, channel: 3 }); }
-  else if (oscMsg.address == "/Fader205") { output.send('pitch', { value: oscMsg.args[0].value, channel: 4 }); }
-  else if (oscMsg.address == "/Fader206") { output.send('pitch', { value: oscMsg.args[0].value, channel: 5 }); }
-  else if (oscMsg.address == "/Fader207") { output.send('pitch', { value: oscMsg.args[0].value, channel: 6 }); }
-  else if (oscMsg.address == "/Fader208") { output.send('pitch', { value: oscMsg.args[0].value, channel: 7 }); }
+  if (oscMsg.address == "/Fader201") { move_fader(0, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader202") { move_fader(1, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader203") { move_fader(2, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader204") { move_fader(3, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader205") { move_fader(4, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader206") { move_fader(5, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader207") { move_fader(6, oscMsg.args[0].value); }
+  else if (oscMsg.address == "/Fader208") { move_fader(7, oscMsg.args[0].value); }
   else if (oscMsg.address == "/Fader301") {
     F301 = oscMsg.args[0].value;
     light_encoder(48, F301);
@@ -290,4 +290,13 @@ function light_encoder(controller_nr, fader_value) {
   return;
 }
 
+function move_fader(channel_nr, fader_value) {
+  if (fader_value == -1) {
+    fader_value = 0;
+  }
+
+  output.send('pitch', { value: fader_value, channel: channel_nr });
+
+  return;
+}
 
