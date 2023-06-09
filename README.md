@@ -2,7 +2,7 @@
 use bcf2000 to control ma3 faders OSC
 
 
-This is small nodejs - to control Faders in MA3 via OSC
+This is small nodejs code - to control Faders in MA3 via OSC
 
 Download and instal NODEJS version 14.17 from https://nodejs.org/dist/v14.17.0/node-v14.17.0-x64.msi
 
