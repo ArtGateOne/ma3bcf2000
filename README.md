@@ -44,6 +44,7 @@ dont set bcf2000 in ma3 midi settings in & out.
 
 
 ------
-plugin autor mr-button
+plugin v3 autor mr-button + mod Me and Andreas
+plugin v4 autor Andreas
 
 
