@@ -15,7 +15,11 @@ Double click ma3bcf2000.js
 
 Open my demo show in ma3 and try.
 
-Start plugin - to run feedback
+Start plugin BCF2000 OSC v3 or BCF2000 OSC v4 - to run feedback 
+
+Plugin v3 - is from mr.button - modified by me and finally by Andreas from MAforum - plugin sends feedback to BCF2000 every half second
+
+Plugin v4 - author is Andreas from MAforum - this plugin sends only state changes to BCF2000
 
 ---
 
