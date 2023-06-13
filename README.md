@@ -42,6 +42,12 @@ Run BCF2000 in Mackie mode (2 button)
 
 dont set bcf2000 in ma3 midi settings in & out.
 
+----
+v1.0.8 #MA3 and #BCF2000 #OSC #Feedback - v1.0.8
+
+Support for keys and encoder clicks has been added, which can be customized to your preferences.
+You can assign any commands or macros (edit .js file in Notepad).
+
 
 ------
 plugin v3 autor mr-button + mod Me and Andreas
